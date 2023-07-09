@@ -3,6 +3,11 @@
 
 MVVM, Dagger2, Cicerone, Retrofit, Coroutines, Datastore;
 
+# TODO
+- Доработать логику авторизации
+- Провайдить в FragmentFactory дагеровские провайдеры для создания фрагментов, чтобы все фрагменты не создавались в момент запуска приложения
+- Переиспользовать обработку inputStatus-ов в RequestLoanFragment
+- Провести рефакторинг согласно SOLID и Clean architecture
 
 # Детали
 При помощи Dagger2 реализованы фабрики для фрагментов и вьюмоделей.
