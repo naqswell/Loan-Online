@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LoanOnline" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+
+        <item name="CftButtonsColor">@color/buttonsColor</item>
+        <item name="CftBackgroundColor">@color/dark</item>
+        <item name="CftToolbarTextColor">@color/white</item>
+        <item name="CftToolbarColor">@color/black</item>
+        <item name="CftHintColor">@color/white</item>
+        <item name="CftButtonsTextColor">@color/white</item>
+        <item name="CftCardViewColor">@color/white</item>
+
+        <item name="android:statusBarColor" >?CftToolbarColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>

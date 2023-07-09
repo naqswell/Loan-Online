@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/CftToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/CftToolbarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appbar_loan_details" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:visibility="visible"
+        tools:visibility="gone"
+        android:indeterminateTint="@color/buttonsColor"
+        />
+
+    <ScrollView
+        android:id="@+id/rootDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginBottom="16dp"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLoanDetail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="?CftCardViewColor"
+                app:cardElevation="@dimen/CftCardViewElevation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtLoanDetail"
+                        style="@style/CftToolbarTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/loan_details"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:id="@+id/dividerLoanDetail"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLoanDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txtNameHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/name"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNameValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dividerLoanDetail"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtNameValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        tools:text="Иван"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/txtNameHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/dividerLoanDetail"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtSurnameHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/surname"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSurnameValue"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNameValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txtSurnameValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        tools:text="Иванов"
+                        android:gravity="start"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtSurnameHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNameValue"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtPhoneHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/phone"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtPhoneValue"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSurnameValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txtPhoneValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        tools:text="+7912312312"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtPhoneHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSurnameValue"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtSumHeader"
+                        android:gravity="end"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/loan_sum"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSumValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPhoneHeader" />
+
+                    <TextView
+                        android:id="@+id/txtSumValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        tools:text="10000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtSumHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPhoneValue" />
+
+                    <TextView
+                        android:id="@+id/txtPercentHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/header_percent"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtPercentValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSumHeader" />
+
+                    <TextView
+                        android:id="@+id/txtPercentValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        tools:text="5%"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtPercentHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSumValue" />
+
+                    <TextView
+                        android:id="@+id/txtPeriodHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/header_period"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtPeriodValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPercentHeader"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtPeriodValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        tools:text="60"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtPeriodHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPercentValue"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtStatusHeader"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/header_status"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toStartOf="@+id/txtStatusValue"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPeriodHeader"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtStatusValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        tools:text="Одобрено"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtStatusHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPeriodValue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                app:layout_constraintTop_toBottomOf="@+id/cardLoanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="?CftCardViewColor"
+                app:cardElevation="@dimen/CftCardViewElevation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txtGuideHeader"
+                        style="@style/CftToolbarTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/loan_repayment"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:id="@+id/dividerGuide"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/txtGuideHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txtGuideText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/guide_payment"
+                        android:textSize="@dimen/CftTextHeaderSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/dividerGuide"
+                        app:layout_constraintBottom_toTopOf="@+id/btnPayment"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPayment"
+                        style="@style/CftButton"
+                        app:layout_constraintTop_toBottomOf="@+id/txtGuideText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/button_payment" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

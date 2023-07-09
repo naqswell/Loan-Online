@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="CftTextColor" format="color"/>
+    <attr name="CftHintColor" format="color"/>
+    <attr name="CftBackgroundColor" format="color"/>
+    <attr name="CftToolbarColor" format="color"/>
+    <attr name="CftCardViewColor" format="color"/>
+    <attr name="CftToolbarTextColor" format="color"/>
+    <attr name="CftButtonsColor" format="color"/>
+    <attr name="CftButtonsTextColor" format="color"/>
+</resources>

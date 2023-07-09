@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="CftLoginTextInputCorners">5dp</dimen>
+    <dimen name="CftButtonCorners">8dp</dimen>
+
+    <dimen name="CftCardViewCorners">8dp</dimen>
+    <dimen name="CftCardViewElevation">5sp</dimen>
+
+    <dimen name="CftButtonTextSize">24sp</dimen>
+    <dimen name="CftToolBarTextSize">24sp</dimen>
+    <dimen name="CftLoginTextSize">40sp</dimen>
+    <dimen name="CftTextHeaderSize">20sp</dimen>
+    <dimen name="CftMaterialButtonRecommendationMaxWidth">320dp</dimen>
+</resources>

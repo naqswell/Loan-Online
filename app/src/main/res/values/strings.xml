@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Loan Online</string>
+    <string name="rubble_symbol">%1$s ₽</string>
+    <string name="loan_period">%1$s дней</string>
+    <string name="loan_sum">Сумма займа</string>
+    <string name="loan_percent">%1$s %%</string>
+    <string name="button_apply_loan">Продолжить</string>
+    <string name="loan_period_header">Срок займа:</string>
+    <string name="header_period">Срок займа</string>
+    <string name="header_status">Статус</string>
+    <string name="hint_login">Введите имя пользователя</string>
+    <string name="hint_password">Введите пароль</string>
+    <string name="button_login">Войти</string>
+    <string name="hint_name">Введите ваше имя</string>
+    <string name="hint_surname">Введите вашу фамилию</string>
+    <string name="hint_phone">Введите ваш номер телеофна</string>
+    <string name="button_confirm">Подтвердить</string>
+    <string name="appbar_login">Вход</string>
+    <string name="appbar_application">Оформление</string>
+    <string name="appbar_loan_details">Детали займа</string>
+    <string name="appbar_guide">Помощь</string>
+    <string name="request_processing">Ваша заявка успешно поступила на оформление</string>
+    <string name="button_continue">Продолжить</string>
+    <string name="appbar_loans">Займы</string>
+    <string name="input_status_short">Недостаточное количество символов</string>
+    <string name="input_status_no_letters">Должна присутсвовать хотя бы одна буква</string>
+    <string name="something_went_wrong">Что-то пошло не так, проверьте ваше соединение и попробуйте снова</string>
+    <string name="header_percent">Процент</string>
+
+    <string name="status_approved">Одобрено</string>
+    <string name="status_registered">Проверяется</string>
+    <string name="status_rejected">Отклонена</string>
+    <string name="loan_repayment">Погашение займов</string>
+    <string name="loan_details">Сведения о займе</string>
+    <string name="button_payment">Оплатить</string>
+    <string name="guide_payment">Оплачивайте займы любого банка РФ удобным для вас способом онлайн или наличными в пунктах лбслуживания</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="phone">Телефон</string>
+    <string name="header_guide">Инструкция по оформлению займа</string>
+    <string name="guide_text">Для того чтобы оформить займ вам нужно: \n • Выбрать при помощи ползунка необходимую сумму \n • Нажать кнопку продолжить \n • Ввести личные данные \n • Дождаться подтверждения заявки</string>
+
+    <string name="error_io_exception">Проверьте соединение</string>
+    <string name="error_403">Проблемы на сервере</string>
+    <string name="error_auth">Проблемы при авторизации</string>
+    <string name="error_http_exception">Что-то пошло не так, попробуйте еще раз позже</string>
+    <string name="error_timeout_exception">Превышено время ожидания от сервера</string>
+
+</resources>
